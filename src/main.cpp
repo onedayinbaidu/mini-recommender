@@ -86,6 +86,7 @@ int main(int argc, char** argv) {
 
     // 说明：用户的历史推荐记录
     History history;
+    history.init("data/users");
     history.set_capacity(40 << 10);
 
     Recommender recommender;
